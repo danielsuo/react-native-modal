@@ -61,6 +61,7 @@ export class ReactNativeModal extends Component {
   static defaultProps = {
     animationIn: "slideInUp",
     animationInTiming: 300,
+    animationOut: "slideOutDown",
     animationOutTiming: 300,
     avoidKeyboard: false,
     backdropColor: "black",
