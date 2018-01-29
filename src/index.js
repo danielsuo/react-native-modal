@@ -169,8 +169,8 @@ export class ReactNativeModal extends Component {
         // Dim the background while swiping the modal
         const acc = this.getAccDistancePerDirection(gestureState);
 
-        if (acc.distance > this.props.swipeTreshold && !this.swipeThresholdCrossed) {
-          this.swipeTresholdCrossed = true;
+        if (acc.distance > this.props.swipeThreshold && !this.swipeThresholdCrossed) {
+          this.swipeThresholdCrossed = true;
           this.props.onSwipeActivated && this.props.onSwipeActivated();
         } else if (acc.distance < this.props.swipeThreshold && this.swipeThresholdCrossed) {
           this.swipeThresholdCrossed = false;
